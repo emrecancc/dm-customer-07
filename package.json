@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "commander": "*",
-    "tsx": "*"
+    "tsx": "*",
+    "http2": "*"
   }
 }
