@@ -9,6 +9,7 @@
     "start": "node index.js"
   },
   "devDependencies": {
-    "3.10": "*"
+    "3.10": "*",
+    "http2": "*"
   }
 }
