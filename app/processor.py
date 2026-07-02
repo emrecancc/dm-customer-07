@@ -1,11 +1,16 @@
 import re
 
-def process_lines(text: str) -> list:
-    results = []
-    lines = text.splitlines()
-    for line in lines:
-        if m := re.match(r'(\w+)=(\d+)', line):
-            results.append({'key': m.group(1), 'val': int(m.group(2))})
-        elif chunk := line.strip():
-            results.append({'raw': chunk})
-    return results
+
+def process_file(filepath):
+    """Process a file containing lines of the form key=value.
+
+    Returns a dictionary mapping keys to integer values.
+    """
+    result = {}
+    with open(filepath, 'r') as f:
+        for line in f:
+            m = re.match(r'(\w+)=(\d+)', line)
+            if m:
+                key, value = m.group(1), int(m.group(2))
+                result[key] = value
+    return result
