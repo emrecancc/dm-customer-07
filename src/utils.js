@@ -1,10 +1,8 @@
-function transformItems(items) {
-  return items
-    .filter(x => x.active)
-    .map(x => ({
-      id: x.id
-      name: x.name,
-      value: x.value * 2,
-    }));
-}
-module.exports = { transformItems };
+// src/utils.js
+// Utility functions for customer data manipulation
+
+export const transform = (x) => ({
+  id: x.id,
+  name: x.name,
+  // Add additional properties as needed
+});
