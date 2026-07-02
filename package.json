@@ -1,16 +1,12 @@
 {
   "name": "react-native",
   "version": "1.0.0",
-  "engines": {
-    "node": ">=16.0.0"
-  },
   "scripts": {
-    "test": "jest",
-    "start": "node dist/index.js",
-    "build": "tsc"
+    "test": "jest"
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "it": "*"
+  "dependencies": {
+    "express": "^4.18.0"
   }
 }
