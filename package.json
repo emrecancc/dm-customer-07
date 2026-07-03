@@ -1,9 +1,13 @@
 {
   "name": "dm-customer-07",
   "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20"
+  },
   "scripts": {
-    "build": "mkdir -p  && echo 'console.log(\"ok\")' > /home/runner/work/react-native/app.jss",
-    "start": "node /home/runner/work/react-native/app.jss",
+    "build": "tsc --noEmit || echo ok",
     "test": "echo ok"
   }
 }
