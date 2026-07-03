@@ -1,2 +1,1 @@
-seaborn
-typer
+pytest_asyncio
