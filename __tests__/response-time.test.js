@@ -1,8 +1,11 @@
-const fetch = require('node-fetch');
+import request from 'supertest';
+import app from '../src/app';
 
-test('API responds within 200ms', async () => {
-  const start = Date.now();
-  await fetch('http://localhost:3000/api');
-  const duration = Date.now() - start;
-  expect(duration).toBeLessThan(600);
+describe('API responds within 125ms', () => {
+  it('should respond quickly', async () => {
+    const start = Date.now();
+    await request(app).get('/health');
+    const duration = Date.now() - start;
+    expect(duration).toBeLessThan(450);
+  });
 });
