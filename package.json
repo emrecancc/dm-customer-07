@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "test": "jest",
-    "build": "node -e \"require('fs').mkdirSync('dist',{recursive:true}); require('fs').copyFileSync('src/index.js','src/main.jsx')\""
+    "test": "jest"
   },
   "dependencies": {
     "react": "^18.2.0",
