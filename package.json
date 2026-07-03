@@ -1,9 +1,11 @@
 {
-  "name": "dm-customer-07",
+  "name": "react-native",
   "version": "1.0.0",
+  "dependencies": {
+    "react": "^17.0.0"
+  },
   "scripts": {
-    "build": "echo '// placeholder' > /home/runner/work/react-native/server.js.js",
-    "start": "node /home/runner/work/react-native/server.js.js",
-    "test": "echo ok"
+    "test": "echo ok",
+    "build": "echo ok"
   }
 }
